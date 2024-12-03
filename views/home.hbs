@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="background"></div>
+
+    <!-- Centered Content -->
+    <div class="container d-flex justify-content-center align-items-center min-vh-100">
+        <div class="text-center p-5 bg-white bg-opacity-80 rounded shadow">
+            <h1 class="mb-4">Welcome to the Home Page!</h1>
+            <p class="mb-4">You have successfully logged in.</p>
+            <a href="/logout">
+                  <button class="btn btn-danger" onclick="logout()">Logout</button>
+            </a>
+            
+        </div>
+    </div>
+
+    <!-- Bootstrap JS (Optional, for Bootstrap components that require JavaScript) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script>
+        function logout() {
+            // Redirect to the login page or perform logout logic
+            window.location.href = 'login.html'; // Adjust the path as needed
+        }
+    </script>
+</body>
+</html>
